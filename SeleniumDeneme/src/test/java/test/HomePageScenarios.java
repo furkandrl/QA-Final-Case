@@ -40,7 +40,6 @@ public class HomePageScenarios {
     @Test
     @Order(3)
     public void click_last_product(){
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         homePage.click_last_product();
         System.out.println("Last product int the list clicked");
     }
@@ -49,7 +48,7 @@ public class HomePageScenarios {
     @Order(4)
     public void check_product(){
         String productCode = homePage.get_product_code();
-        String targetProductCode ="Ürün Kodu : HIP-86766";
+        String targetProductCode ="Ürün Kodu : ARI-6179";
         assertEquals(productCode, targetProductCode);
     }
 

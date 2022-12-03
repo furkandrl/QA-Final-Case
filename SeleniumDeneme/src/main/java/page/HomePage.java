@@ -20,7 +20,7 @@ public class HomePage {
 
     By overlay = By.xpath("//div/div/img[@class='ins-close-button-c2703']");
     By searchBar = By.xpath(("//div/div/input[@id='txtSearchBox']"));
-    By lastProduct = By.xpath("//div/div/div/ul/li/a[@href='/hipp-pirincli-ek-gida-kasik-mamasi-200-gr-p-hip-86766']");
+    By lastProduct = By.xpath("//div/div/div/ul/li/a[@href='/arilac-sutlu-pirincli-kasik-mamasi-200-g-p-ari-6179']");
     By addCartButton = By.xpath("//div[@class='col-xl-5half']//button[@id='addToCartBtn']");
     By showCartButton = By.xpath("//a[@id='btnShowCart']");
     By completeShopping = By.xpath("//button[@id='btnGoToShippingAddress']");
@@ -48,9 +48,8 @@ public class HomePage {
     }
 
     public String get_product_code(){
-        String productCode = driver.findElement(By.xpath("//div[@class='col-xl-5half']//p/span"))
+        return driver.findElement(By.xpath("//div[@class='col-xl-5half']//p/span"))
                 .getText();
-        return productCode;
     }
 
     public void click_add_cart(){

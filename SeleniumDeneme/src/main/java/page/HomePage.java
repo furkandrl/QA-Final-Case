@@ -16,8 +16,6 @@ public class HomePage {
     WebDriverWait wait;
     Helper elementHelper;
 
-
-
     By overlay = By.xpath("//div/div/img[@class='ins-close-button-c2703']");
     By searchBar = By.xpath(("//div/div/input[@id='txtSearchBox']"));
     By lastProduct = By.xpath("//div/div/div/ul/li/a[@href='/arilac-sutlu-pirincli-kasik-mamasi-200-g-p-ari-6179']");
